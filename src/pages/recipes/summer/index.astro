@@ -9,7 +9,7 @@
     <section class="">
         <div class="container">
             {posts.map(post => (
-            <Card href={`/${post.frontmatter.slug}`} title={post.frontmatter.title} body={post.frontmatter.excerpt} />
+            <Card className="link-card" href={`/${post.frontmatter.slug}`} title={post.frontmatter.title} body={post.frontmatter.excerpt} />
             ))}
         </div>
     </section>

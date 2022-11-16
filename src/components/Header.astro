@@ -2,24 +2,21 @@
 export interface Props {
 	title: string;
 	body: string;
-	href: string;
-    className: string;
+	className: string;
 }
 
-const { className, href, title, body, season } = Astro.props;
+const { className, title, body} = Astro.props;
 ---
 
-<li class={className}>
-	<a href={href}>
-		<h2>
-			{title}
-			<span>&rarr;</span>
-		</h2>
-		<p>
-			{body}
-		</p>
-	</a>
-</li>
+<div class={className}>
+    <h2>
+        {title}
+        <span>&rarr;</span>
+    </h2>
+    <p>
+        {body}
+    </p>
+</div>
 
 <style>
 	.link-card {
@@ -34,6 +31,7 @@ const { className, href, title, body, season } = Astro.props;
 		transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
 		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
 	}
+
 	.link-card > a {
 		width: 100%;
 		text-decoration: none;
@@ -44,10 +42,6 @@ const { className, href, title, body, season } = Astro.props;
 		background-color: white;
 		opacity: 0.8;
 	}
-    	.active {
-		background-size: 200%;
-		background-position: 50%;
-	}
 	h2 {
 		margin: 0;
 		font-size: 1.25rem;
@@ -57,6 +51,9 @@ const { className, href, title, body, season } = Astro.props;
 		margin-top: 0.5rem;
 		margin-bottom: 0;
 		color: #444;
+	}
+	.link-card-season {
+		border-color: #111;
 	}
 	.link-card:is(:hover, :focus-within) {
 		background-position: 0;

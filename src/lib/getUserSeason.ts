@@ -8,7 +8,7 @@ export const getUserSeason = () => {
         userSeason = 'Spring';
     } else if (currentMonth === 5 || currentMonth === 6 || currentMonth === 7) {
         userSeason = 'Summer';
-    } else {
+    } else if (currentMonth === 8 || currentMonth === 9 || currentMonth === 10) {
         userSeason = 'Autumn';
     };
     return userSeason;
