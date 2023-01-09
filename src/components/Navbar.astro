@@ -1,0 +1,25 @@
+---
+export interface Props {
+	title: string;
+	className: string;
+}
+
+const { className, title} = Astro.props;
+---
+
+<div class={className}>
+    <a href="/"><h1>
+        {title}
+    </h1></a>
+</div>
+
+<style>
+	h1 {
+        color: #000;
+		font-size: 1.25rem;
+        font-family: sans-serif;
+	}
+    a, a:link, a:visited{
+        text-decoration: none;
+    }
+</style>

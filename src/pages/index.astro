@@ -5,6 +5,7 @@
     import { getUserSeason } from '../lib/getUserSeason';
     import Header from '../components/Header.astro';
     import values from '../vegetable-values.json';
+import Navbar from '../components/Navbar.astro';
 
     const userLocation = await getUserLocation();
     const userSeason = getUserSeason();
@@ -79,5 +80,10 @@
         grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
         gap: 1rem;
         padding: 0;
+    }
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+        gap: 1rem;
     }
 </style>
