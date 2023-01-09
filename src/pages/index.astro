@@ -4,7 +4,7 @@
     import { getUserLocation } from '../lib/getUserLocation';
     import { getUserSeason } from '../lib/getUserSeason';
     import Header from '../components/Header.astro';
-    import values from '../values.json';
+    import values from '../vegetable-values.json';
 
     const userLocation = await getUserLocation();
     const userSeason = getUserSeason();
@@ -14,19 +14,19 @@
     <main>
         <h1>Welcome to <span class="text-gradient">Astro Foodie</span></h1>
 
-        <Header className={`instructions ${userSeason}`} title={`${userSeason} vegetables in
+        <Header className={`instructions ${userSeason}`} title={`${userSeason} vegetables and fruits in
             ${userLocation.country?.name ?? 'your country'}`} body={values.summer}>
         </Header>
 
         <ul role="list" class="link-card-grid">
             <Card className={`${userSeason === 'Summer' ? 'link-card active' : 'link-card' }`} href="/recipes/summer"
-                title="🏖 Summer" body="Learn how Astro works." />
+                title="🏖 Summer" body="Best recipes for this time of the year." />
             <Card className={`${userSeason === 'Spring' ? 'link-card active' : 'link-card' }`} href="/recipes/spring"
-                title="🌼 Spring" body="Supercharge your project with new frameworks." />
+                title="🌼 Spring" body="Best recipes for this time of the year." />
             <Card className={`${userSeason === 'Autumn' ? 'link-card active' : 'link-card' }`} href="/recipes/autumn"
-                title="🍂 Autumn" body="Explore a galaxy of community-built starter themes." />
+                title="🍂 Autumn" body="Best recipes for this time of the year." />
             <Card className={`${userSeason === 'Winter' ? 'link-card active' : 'link-card' }`} href="/recipes/winter"
-                title="❄️ Winter" body="Come say hi to our amazing Discord community." />
+                title="❄️ Winter" body="Best recipes for this time of the year." />
         </ul>
     </main>
 </Layout>

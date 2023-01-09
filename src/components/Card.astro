@@ -13,7 +13,6 @@ const { className, href, title, body, season } = Astro.props;
 	<a href={href}>
 		<h2>
 			{title}
-			<span>&rarr;</span>
 		</h2>
 		<p>
 			{body}
@@ -26,8 +25,9 @@ const { className, href, title, body, season } = Astro.props;
 		list-style: none;
 		display: flex;
 		padding: 0.15rem;
+        margin-top: 1rem;
 		background-color: white;
-		background-image: var(--accent-gradient);
+        background-image: var(--accent-gradient);
 		background-size: 400%;
 		border-radius: 0.5rem;
 		background-position: 100%;

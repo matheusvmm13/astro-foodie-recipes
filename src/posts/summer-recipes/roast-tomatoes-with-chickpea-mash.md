@@ -8,10 +8,6 @@ author: Nigel Slater
 
 ![alt text](https://i.guim.co.uk/img/media/9f37f7d984f8f1dd23f5ac8de1901707b40d157a/0_1855_5449_3268/master/5449.jpg?width=965&quality=85&dpr=1&s=none)
 
-<span style="color: Blue; font-weight: 700; font-size: 20px">
-Markdown heading styles
-</span>
-
 For the tomatoes:
 - tomatoes 1 kg
 - garlic 3 plump cloves
@@ -20,8 +16,8 @@ For the tomatoes:
 
 For the chickpeas:
 - chickpeas 3 x 400g cans
-- bay leaves 2
-- thyme leaves 1 tbsp
+- 2 bay leaves
+- thyme leaves
 - olive oil 175ml
 - chickpea cooking water 100ml
 - lemons 2

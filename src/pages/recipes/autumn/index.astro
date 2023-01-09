@@ -1,0 +1,16 @@
+---
+    import Layout from "../../../layouts/Layout.astro";
+    import Card from "../../../components/Card.astro";
+
+    const posts = await Astro.glob("../../../posts/autumn-recipes/*.md");
+---
+
+<Layout title="Autumn recipes">
+    <section class="">
+        <div class="container">
+            {posts.map(post => (
+            <Card className="link-card" href={`/${post.frontmatter.slug}`} title={post.frontmatter.title} body={post.frontmatter.excerpt} />
+            ))}
+        </div>
+    </section>
+</Layout>
