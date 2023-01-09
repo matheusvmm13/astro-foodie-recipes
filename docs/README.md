@@ -1,4 +1,4 @@
-# Welcome to [Astro Foodie](https://astro.build)
+# Welcome to [Astro Foodie](https://astro-foodie.vercel.app/)
 
 ## 🥦 About Astro Foodie
 An attempt to experience [Astro](https://astro.build) technology by building a book recipe with seasonal vegetables and fruits from your region and current season.
