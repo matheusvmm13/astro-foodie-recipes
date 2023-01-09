@@ -4,6 +4,7 @@
     import { getUserLocation } from '../lib/getUserLocation';
     import { getUserSeason } from '../lib/getUserSeason';
     import Header from '../components/Header.astro';
+    import values from '../values.json';
 
     const userLocation = await getUserLocation();
     const userSeason = getUserSeason();
@@ -14,7 +15,7 @@
         <h1>Welcome to <span class="text-gradient">Astro Foodie</span></h1>
 
         <Header className={`instructions ${userSeason}`} title={`${userSeason} vegetables in
-            ${userLocation.country.name}`} body={`🥦 🍇 🌶 🥕 🧅 🍠 🎃`}>
+            ${userLocation.country?.name ?? 'your country'}`} body={values.summer}>
         </Header>
 
         <ul role="list" class="link-card-grid">
