@@ -10,8 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/preact": "^1.2.0",
     "astro": "^1.6.7",
-    "esbuild-darwin-arm64": "^0.15.18"
+    "esbuild-darwin-arm64": "^0.15.18",
+    "preact": "^10.11.3"
   },
   "devDependencies": {
     "prettier": "^2.7.1",

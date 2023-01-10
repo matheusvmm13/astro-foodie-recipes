@@ -5,7 +5,8 @@
     import { getUserSeason } from '../lib/getUserSeason';
     import Header from '../components/Header.astro';
     import values from '../vegetable-values.json';
-import Navbar from '../components/Navbar.astro';
+    import { Greeting } from '../components/Greeting';
+    import { Location } from '../components/Location';
 
     const userLocation = await getUserLocation();
     const userSeason = getUserSeason();
@@ -14,6 +15,10 @@ import Navbar from '../components/Navbar.astro';
 <Layout title="Astro Foodie">
     <main>
         <h1>Welcome to <span class="text-gradient">Astro Foodie</span></h1>
+        
+        <Greeting client:load messages={["Hej", "Hallo", "Hola", "Habari"]} />
+
+        <Location client:load/>
 
         <Header className={`instructions ${userSeason}`} title={`${userSeason} vegetables and fruits in
             ${userLocation.country?.name ?? 'your country'}`} body={values.summer}>
