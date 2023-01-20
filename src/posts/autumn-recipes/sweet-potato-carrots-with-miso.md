@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Layout.astro
 title: Sweet potato and carrots with miso
 slug: sweet-potato-and-carrots-with-miso
 excerpt: Nigel Slater’s recipes for carrots and sweet potato with a miso and mustard sauce.

@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Layout.astro
 title: Lentils and couscous with raisins and apricots
 slug: lentils-couscous-with-raisins-and-apricots
 excerpt: Nigel Slater's lentils and couscous recipe.

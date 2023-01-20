@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Layout.astro
 title: Chicken pasta and cauliflower cheese
 slug: chicken-pasta-and-cauliflower-cheese
 excerpt: Nigel Slater’s roast chicken pasta and cauliflower cheese recipes.

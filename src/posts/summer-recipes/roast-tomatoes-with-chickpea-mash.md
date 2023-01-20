@@ -1,4 +1,5 @@
 ---
+layout: ../../layouts/Layout.astro
 title: Roast tomatoes with chickpea mash
 slug: roast-tomatoes-with-chickpea-mash
 excerpt: Nigel Slater’s recipes for roast tomatoes with chickpea mash, and orange and poppy seed cake.

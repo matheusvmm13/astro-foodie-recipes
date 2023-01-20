@@ -1,14 +1,14 @@
 ---
-    import { getUserSeason } from '../lib/getUserSeason';
     import Layout from '../layouts/Layout.astro';
     import Card from '../components/Card.astro';
-    import Header from '../components/Header.astro';
     import values from '../vegetable-values.json';
+    import { getUserSeason } from '../lib/getUserSeason';
+    import { Header } from '../components/Header';
 
     const userSeason = getUserSeason();
 ---
 
-<Layout title="Astro Foodie">
+<Layout title="AstroFoodie">
     <main>
         <h1>Welcome to <span class="text-gradient">AstroFoodie</span></h1>
 
@@ -16,8 +16,8 @@
             client:load
             className={`instructions ${userSeason}`}
             title={`${userSeason} vegetables and fruits in`}
-            body={values[userSeason]}>
-        </Header>
+            body={values[userSeason]}
+        />
 
         <ul role="list" class="link-card-grid">
             <Card className={`${userSeason === 'Summer' ? 'link-card active' : 'link-card' }`} href="/recipes/summer"
@@ -60,19 +60,6 @@
         background-color: white;
         padding: 1rem;
         border-radius: 0.4rem;
-    }
-
-    .instructions code {
-        font-size: 0.875em;
-        font-weight: bold;
-        background: rgba(var(--accent), 12%);
-        color: rgb(var(--accent));
-        border-radius: 4px;
-        padding: 0.3em 0.45em;
-    }
-
-    .instructions strong {
-        color: rgb(var(--accent));
     }
 
     .link-card-grid {
