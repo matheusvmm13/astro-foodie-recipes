@@ -4,7 +4,7 @@ export interface Props {
 	body: string;
 	className: string;
 }
-const response = await fetch('https://api.geoapify.com/v1/ipinfo?&apiKey=9d92bf811c2d4a569c3403f33637a2fa');
+const response = await fetch(`https://api.geoapify.com/v1/ipinfo?&apiKey=9d92bf811c2d4a569c3403f33637a2fa`);
 const userLocation: Record<string, any> = await response.json();
 
 const { className, title, body } = Astro.props;

@@ -13,10 +13,10 @@
         <h1>Welcome to <span class="text-gradient">AstroFoodie</span></h1>
 
         <Header 
-            client:visible
+            client:load
             className={`instructions ${userSeason}`}
             title={`${userSeason} vegetables and fruits in`}
-            body={values.summer}>
+            body={values[userSeason]}>
         </Header>
 
         <ul role="list" class="link-card-grid">
