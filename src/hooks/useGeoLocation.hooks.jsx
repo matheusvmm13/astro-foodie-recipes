@@ -1,7 +1,6 @@
 import { useEffect, useState } from "preact/hooks";
-import styles from "./Header.module.css";
 
-export const Header = ({ className, title, body }) => {
+export const useGeoLocation = () => {
     const [country, setCountry] = useState("...");
 
     const successfulLookup = async (position) => {
@@ -25,16 +24,5 @@ export const Header = ({ className, title, body }) => {
         }
     }, []);
     
-
-    return (
-        <>
-            <div className={className}>
-                <h2 className={styles.title}>
-                    {title} {country}
-                    <span> &rarr; </span>
-                </h2>
-                <p className={styles.body}>{body}</p>
-            </div>
-        </>
-    );
+    return country;
 };
