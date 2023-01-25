@@ -17,7 +17,7 @@ Inside of your Astro project, you'll see the following folders and files:
 ├── src/
 │   ├── components/
 │   │   └── Card.astro
-│   │   └── Header.astro
+│   │   └── Header.tsx
 │   │   └── Navbar.astro
 │   ├── lib/
 │   │   └── getUserLocation
