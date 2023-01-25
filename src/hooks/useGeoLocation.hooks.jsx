@@ -1,17 +1,17 @@
 import { useEffect, useState } from "preact/hooks";
 
 let CACHE = "";
+const initialState = "your country";
 
 export const useGeoLocation = () => {
-    const [country, setCountry] = useState("");
+    const [country, setCountry] = useState(initialState);
 
     useEffect(() => {
         const successfulLookup = async (position) => {
             const { latitude, longitude } = position.coords;
     
-            if (CACHE.length > 3) {
+            if (CACHE !== initialState) {
                 setCountry(CACHE);
-                console.log("taking from cached country", CACHE);
                 return CACHE;
             };
     
@@ -21,7 +21,6 @@ export const useGeoLocation = () => {
             const userLocation = await response.json();
             setCountry(userLocation.results[0]?.components?.country);
             CACHE = country;
-            console.log("cache value:", CACHE);
         };
 
         if (window.navigator.geolocation) {
