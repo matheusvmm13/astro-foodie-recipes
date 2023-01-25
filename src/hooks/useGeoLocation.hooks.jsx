@@ -1,7 +1,7 @@
 import { useEffect, useState } from "preact/hooks";
 
-let CACHE = "";
 const initialState = "your country";
+let CACHE = initialState;
 
 export const useGeoLocation = () => {
     const [country, setCountry] = useState(initialState);
