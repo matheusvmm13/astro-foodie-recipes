@@ -1,7 +1,6 @@
 {
   "extends": "astro/tsconfigs/base",
   "compilerOptions": {
-    "types": ["vite-plugin-pwa/info"],
     "jsx": "react-jsx",
     "jsxImportSource": "preact",
   }
