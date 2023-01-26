@@ -16,6 +16,7 @@
     "preact": "^10.11.3"
   },
   "devDependencies": {
+    "@vite-pwa/astro": "^0.0.1",
     "prettier": "^2.7.1",
     "prettier-plugin-astro": "^0.7.0"
   }
